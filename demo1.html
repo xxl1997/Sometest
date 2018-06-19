@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body{margin: 0;background-color: #000}
+		.box{
+			position: relative;
+			width: 200px;
+			height: 200px;
+			/*background-color: green;*/
+			margin-top: 100px;
+			/*margin-left: 100px;*/
+			border-radius: 50%;
+			animation: go2 1s infinite linear;
+		}
+		.box:after,.box:before{
+			content: "";
+			width: 200px;
+			height: 100px;
+			margin-left: 100px;
+			display: block;
+			background-color: #ff0;
+		}
+		.box:after{
+			border-radius: 0 0  100px 100px;
+			animation: goi .5s infinite alternate;
+		}
+		.box:before{
+			border-radius: 100px 100px 0 0;
+			animation: go .5s infinite alternate;
+		}
+		.box .eye{
+			position: absolute;
+			left:170px;
+			top:30px;
+			width: 32px;
+			height: 32px;
+			background-color: #000;
+			border-radius: 50%;
+		}
+		@keyframes go{
+		0%{transform: rotate(0)}
+		100%{transform: rotate(-30deg)}
+		}
+		@keyframes goi{
+		0%{transform: rotate(0)}
+		100%{transform: rotate(30deg)}
+		}
+		@keyframes go2{
+		0%{box-shadow:300px 0 0 -80px #fff,
+		450px 0 0 -80px #fff,
+		600px 0 0 -80px #fff,
+		750px 0 0 -80px #fff,
+		900px 0 0 -80px #fff,
+		1050px 0 0 -80px #fff}
+		100%{box-shadow:150px 0 0 -80px #fff,
+		300px 0 0 -80px #fff,
+		450px 0 0 -80px #fff,
+		600px 0 0 -80px #fff,
+		750px 0 0 -80px #fff,
+		900px 0 0 -80px #fff}
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="eye"></div>
+	</div>
+</body>
+</html>
