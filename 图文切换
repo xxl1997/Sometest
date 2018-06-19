@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="adj">
+	<meta name="description" content="clso">
+	<title>Document</title>
+	<style>
+	*{margin:0;padding: 0}
+	body{
+		background-color: white;
+	}
+	.box{
+		width: 900px;
+		height: 650px;
+		margin: 50px auto;
+		
+	}
+	.box ul{
+	     
+	     list-style:none;
+	     letter-spacing: -8px;
+	}
+	.box ul li{
+		display: inline-block;
+		position: relative;
+		width:400px; 
+		height:300px;
+		background-color: #292c54;
+	}
+	.box ul li:nth-child(odd){
+		margin-right: 80px;
+	}
+	.box ul li:nth-child(-n+2){
+		margin-bottom: 40px;
+	}
+	.box ul li img{
+		position: absolute;
+		left: 0;right: 0;
+		top: 0;bottom: 0;
+		margin: auto;
+		width: 150px;
+		height:205px;
+	}
+	.box ul li .text{
+		overflow: hidden;
+		width: 0px;
+		height: 300px;
+		background-color: #2c3f52;
+		transition: .5s;
+	}
+	.box ul li:hover .text{
+		width: 200px;
+	}
+	.box ul li .text h3{
+		color: #fff;
+		text-align: center;
+		font-size: 30px;
+		letter-spacing: 8px;
+		line-height: 80px;
+	}
+	.box ul li .text p{
+		color: #fff;
+		text-indent: 2em;
+		font-weight: 600;
+		letter-spacing: 8px;
+		line-height: 30px;
+		
+	}
+	.box ul li:hover img{
+		position: absolute;
+		left: 200px;right: 0;
+		top: 0;bottom: 0;
+		margin: auto;
+		width: 150px;
+		height:205px;
+		transition: .5s;
+	}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<ul>
+			<li>
+				<img src="1.jpg">
+				<div class="text">
+					<h3>本杰明警官</h3>
+					<p>动物城警察局里的前台招待，在接待桌前，它总是对每个人报以热情的微笑。</p>
+				</div>
+			</li>
+			<li>
+				<img src="2.jpg">
+				<div class="text">
+					<h3>寻梦环游记</h3>
+					<p>《寻梦环游记》是皮克斯动画工作室的第19部动画长片</p>
+				</div>
+			</li>
+			<li>
+				<img src="3.jpg">
+				<div class="text">
+					<h3>冰雪奇缘</h3>
+					<p>冰雪奇缘是2013年迪士尼出品3D的动画电影，由克里斯·巴克、珍妮弗·李执导，</p>
+				</div>
+			</li>
+			<li>
+				<img src="4.jpg">
+				<div class="text">
+					<h3>美食总动员</h3>
+					<p>故事讲述一只原本注定在垃圾堆度过平淡一生的小老鼠小米，梦想成为站在世界之巅的美味大厨。</p>
+				</div>
+			</li>
+		</ul>
+		
+	</div>
+	
+</body>
+</html>
